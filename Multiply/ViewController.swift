@@ -21,10 +21,14 @@ class ViewController: UIViewController
     
     @IBOutlet weak var productLabel: UILabel!
     
+    @IBOutlet weak var marioImage: UIImageView!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func answerNumber(_ sender: Any)
@@ -39,6 +43,10 @@ class ViewController: UIViewController
         productLabel.text = "\(product)"
         
         
+        if product == 64
+        {
+            marioImage.image = UIImage(named: "Mario")
+        }
     }
    
     
